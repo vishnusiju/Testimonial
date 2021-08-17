@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- <h3>Image Gallery</h3> -->
+    <div class="product">
+        <div class="product-img">
+            <img src="img/3.jpg" onclick="myFunction(this)">
+            <img src="img/4.jpg" onclick="myFunction(this)">
+            <img src="img/5.jpg" onclick="myFunction(this)">
+            <img src="img/7.jpg" onclick="myFunction(this)">
+        </div>
+        <div class="main-img">
+            <img src=" " id="ImageBox">
+        </div>
+
+        <div class="main-content">
+            <h1>Party Flared Women</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing pariatur eaque delectus 
+                ipsum dolor sit amet, consectetur adipisicing pariatur eaque delectus.</p>
+        
+            <div class="text-list">
+                <ul>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing pariatur</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing pariatur</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing pariatur</li>
+                </ul>
+            </div>
+            <div class="rating">
+                <h4>4.5</h4>
+                <h3>21,527 Ratings & 1,922 Reviews</h3>
+            </div>
+            <div class="amount">
+                <h3>Rs.375 <span>Rs.3625</span> (37% off)</h3>
+            </div>
+            <button>Add To Cart</button>
+            <button>Buy Now</button>
+        </div>
+    </div>
+
+<script>
+    function myFunction(smallImg){
+        var fullImg = document.getElementById('ImageBox');
+        fullImg.src = smallImg.src;
+    }
+</script>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Image Gallery</h2>
+    <div class="product">
+        <div class="product-small-img">
+            <img src="img/3.jpg" onclick="myFunction(this)">
+            <img src="img/4.jpg" onclick="myFunction(this)">
+            <img src="img/5.jpg" onclick="myFunction(this)">
+            <img src="img/7.jpg" onclick="myFunction(this)">
+        </div>
+        <div class="img-container">
+            <img src="img/5.jpg" id="imageBox">
+        </div>
+    </div>
+</body>
+</html> -->
